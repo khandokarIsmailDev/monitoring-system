@@ -1,5 +1,5 @@
 function getRandomValue(array){
-    const randomElement = array[Math.floor(Math.random()*array.length)]
+    const randomElement = array[Math.floor(Math.random()* array.length)]
     return randomElement
 }
 
@@ -15,7 +15,7 @@ function doSomeHeavyTask(){
         ])
         throw new Error (randomError)
     }
-    return new Promise((resolve,reject)=>setTimeout(()=>resolve))
+    return new Promise((resolve,reject)=>setTimeout(()=>resolve(ms),ms))
 }
 
 module.exports = {doSomeHeavyTask}
